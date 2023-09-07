@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main>
+        <div class="calculadora">
+            <div class="pantalla" >
+                <div>
+                    <span class="numero1" id="numero1"></span>
+                    <span class="signo" id="signo" ></span>
+                    <span class="numero2" id="numero2"></span>
+                </div>
+                <div class="resultado" id="resultado"> </div>
+            </div>
+            <button class="btnGrande" onclick="borrarTodo()">C</button>
+            <button onclick="borrar()">&larr;</button>
+            <button class="operador" onclick="agregarOperador('%')"  value="%">%</button>
+            <button id="7" class="numero" onclick="agregarNumero('7')">7</button>
+            <button class="numero" onclick="agregarNumero('8')">8</button>
+            <button class="numero" onclick="agregarNumero('9')">9</button>
+            <button class="operador" onclick="agregarOperador('*')" value="*">*</button>
+            <button class="numero" onclick="agregarNumero('4')">4</button>
+            <button class="numero" onclick="agregarNumero('5')">5</button>
+            <button class="numero" onclick="agregarNumero('6')">6</button>
+            <button class="operador" onclick="agregarOperador('-')"  value="-">-</button>
+            <button class="numero" onclick="agregarNumero('1')">1</button>
+            <button class="numero" onclick="agregarNumero('2')">2</button>
+            <button class="numero" onclick="agregarNumero('3')">3</button>
+            <button class="operador" onclick="agregarOperador('+')"  value="+">+</button>
+            <button class="btnGrande numero" onclick="agregarNumero('0')">0</button>
+            <button class="numero" onclick="agregarDecimal('.')">.</button>
+            <button class="operador" value="=" onclick="calcularResultado()">=</button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+    
+</body>
+</html>
+
+
